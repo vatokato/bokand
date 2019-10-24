@@ -43,6 +43,11 @@
       height: 99vh;
       background-color: coral;
     }
+    
+    .test {
+      position: fixed;
+     
+    }
 
     .textfixed {
       height: 20px;
@@ -55,6 +60,7 @@
       white-space:nowrap;
       transform: rotate(90deg);
     }
+    
 
     #console {
       position: absolute;
@@ -87,6 +93,9 @@
 <div style="right: 25px" class="bar fixedvh"><div class="textfixed">viewport-unit position:fixed</div></div>
 <div style="right: 50px" class="bar abspercent"><div class="textabs">percentage-based position:absolute</div></div>
 <div style="right: 75px" class="bar absvh"><div class="textabs">viewport-unit position:absolute</div></div>
+  
+<div style="right: 150px" class="bar test"><div class="textabs">not 100%</div></div>
+<div style="right: 200px" class="bar test2"><div class="textabs">100%</div></div>
 <div id="console">
   OnResize handler calls will be displayed below with window.innerWidth and documentElement.clientHeight<br><br>
 </div>
